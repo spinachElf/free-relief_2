@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>error!
+	</title>
+
+	<style type="text/css">
+	@charset "utf-8";
+	@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+	.notosanskr * { 
+		font-family: 'Noto Sans KR', sans-serif;
+}
+		body{
+			font-family: Noto Sans KR;
+			margin: 100px 200px;
+		}
+		h1{
+			font-size:5em;
+			font-weight: 400;
+			color: royalblue;
+		}
+		li{ 
+			line-height: 1.8em;
+		}
+		.go{
+			margin-top: 50px;
+			animation-name: dis;
+			animation-duration: 10s;
+		}
+
+		@keyframes dis{
+			from{opacity: 0;}
+			99%{opacity: 0;}
+			to{opacity: 100;}
+		}
+		.move{
+			padding: 5px 20px;
+			font-size: 0.9em;
+			background: linear-gradient(white, #C4CCE9);
+			text-decoration: none;
+			color: black;
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+		.move:hover{
+			background: linear-gradient(#C4CCE9,white);
+		}
+		.lds-dual-ring {
+		  display: inline-block;
+		  width: 80px;
+		  height: 80px;
+		}
+		.lds-dual-ring:after {
+		  content: " ";
+		  display: block;
+		  width: 64px;
+		  height: 64px;
+		  margin: 8px;
+		  border-radius: 50%;
+		  border: 6px solid royalblue;
+		  border-color: royalblue transparent royalblue transparent;
+		  animation: lds-dual-ring 1.2s linear infinite;
+		}
+		@keyframes lds-dual-ring {
+		  0% {
+		    transform: rotate(0deg);
+		  }
+		  100% {
+		    transform: rotate(360deg);
+		  }
+		}
+		.gone{
+			margin-left: 20px;
+			animation-name: gone;
+			animation-duration: 10s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes gone{
+			from{opacity: 100;}
+			99%{opacity: 100;}
+			to{opacity: 0;}
+		}
+	</style>
+</head>
+<body>
+	<h1>이 페이지를 표시할 수 없습니다.</h1>
+	<ul>
+		<li>여러분 잘못이 아닙니다. 침착하세요. 기다리다보면 해결되지 않을까요?</li>
+		<li>기다리는 동안 벽을 부숴보세요 <a href="https://smashthewalls.com">부수러 가기</a></li>
+		<li>아니면 신나있는 아저씨를 구경하는 건 어떠세요? <a href="http://www.partridgegetslucky.com">구경하러 가기</a></li>
+		<li>10초만 기다리시면 고쳐볼게요.</li>
+	</ul>
+	<div class="gone">
+		<div class="lds-dual-ring"></div>
+	</div>
+	<div class="go">
+		<p>좋아요! 고쳤습니다. 안심을 받으러 가볼까요?</p>
+		<a href="https://spinachelf.github.io/free-relief_3/" class="move">이동</a>
+	</div>
+
+</body>
+</html>
